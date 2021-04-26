@@ -1,0 +1,44 @@
+include ../pug/mixins.pug
+
+doctype html
+html(class='page  no-js', lang='ru')
+
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='')
+    link(rel="apple-touch-icon", sizes="72x72", href="img/favicon/apple-touch-icon.png")
+    link(rel="icon", type="image/png", sizes="32x32", href="img/favicon/favicon-32x32.png")
+    link(rel="icon", type="image/png", sizes="16x16", href="img/favicon/favicon-16x16.png")
+    link(rel="manifest", href="img/favicon/site.webmanifest")
+    link(rel="mask-icon", href="img/favicon/safari-pinned-tab.svg", color="5bbad5")
+    meta(name="msapplication-TileColor", content="#ffc40d")
+    meta(name="theme-color", content="#ffffff")
+    link(rel="preload", href="fonts/benderblack.woff2", as="font", crossorigin="anonymous")
+    link(rel="preload", href="fonts/montserrat-black-webfont.woff2", as="font", crossorigin="anonymous")
+    link(rel="preload", href="fonts/montserrat-light-webfont.woff2", as="font", crossorigin="anonymous")
+    link(rel='stylesheet', href='css/style.css')
+    title Человек важнее системы | Сайт в разработке
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    script.
+      document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
+
+  body
+    noscript У вас отключен JavaScript. Это пугает.
+    .page__wrapper
+      .page__main
+        picture.page__logo
+          source(media="(min-width: 0px)", srcset="img/logo_md.png", type="image/png")
+          source(media="(min-width: 1400px)", srcset="img/logo_md.png", type="image/png")
+          img(src="img/logo_xl.png", alt="Человек важнее системы")
+        h1.page__title Человек #[span.page__title--second важнее] #[span.page__title--third системы]
+        .page__start-project Старт проекта #[span.page__start-date Скоро]
+      .page__region-wrapper
+        .page__sr-logo-background
+          .page__sr-logo
+            img(src="img/logo-sr.svg", alt="Справедливая Россия — Патриоты — За правду")
+        .page__region Вологодская Область

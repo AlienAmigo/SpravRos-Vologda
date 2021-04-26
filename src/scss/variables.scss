@@ -1,0 +1,45 @@
+$main-color:          #efb600;
+$warning-color:       #961b1e;
+
+$red-gradient:        linear-gradient(-45deg, rgba(170, 24, 9, 0) 0%, rgba(168, 24, 11, 0.75) 12%, rgba(151, 27, 29, 1) 50%, rgba(150, 27, 30, 1) 45%, rgba(150, 27, 30, 1) 100%);
+$red-gradient-reverse: linear-gradient(45deg, rgba(170, 24, 9, 0) 0%, rgba(168, 24, 11, 0.75) 12%, rgba(151, 27, 29, 1) 50%, rgba(150, 27, 30, 1) 45%, rgba(150, 27, 30, 1) 100%);
+$yellow-gradient:      linear-gradient(45deg, rgba(248, 234, 0, 1) 0%, rgba(243, 212, 0, 1) 100%);
+
+$gray-light:          #f2f2f2;
+$gray-dark:           #231f20;
+
+$text-color:          $gray-dark;
+
+$font-family:         GothamPro, Arial, sans-serif;
+$font-size:           14px;
+$line-height:         1.4;
+
+$screen-xxs:          320px;
+$screen-xs:           480px;
+$screen-sm:           768px;
+$screen-md:           992px;
+$screen-lg:           1200px;
+
+@font-face {
+  font-family: 'Bender Black';
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+  src: url('../fonts/benderblack.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat Black';
+  font-weight: 800;
+  font-style: normal;
+  font-display: block;
+  src: url('../fonts/montserrat-black-webfont.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Montserrat Light';
+  font-weight: 200;
+  font-style: normal;
+  font-display: block;
+  src: url('../fonts/montserrat-light-webfont.woff2') format('woff2');
+}
